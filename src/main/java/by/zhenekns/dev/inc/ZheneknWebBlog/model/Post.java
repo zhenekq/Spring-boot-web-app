@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.servlet.http.PushBuilder;
 import java.util.Objects;
 
 @Entity
@@ -19,7 +18,8 @@ public class Post {
     private String fullText;
     private int views;
 
-    public Post(){}
+    public Post() {
+    }
 
     public Post(String title, String anons, String fullText) {
         this.title = title;
